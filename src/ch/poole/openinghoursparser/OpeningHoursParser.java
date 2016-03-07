@@ -8,16 +8,18 @@ import java.io.ByteArrayInputStream;
 public class OpeningHoursParser implements OpeningHoursParserConstants {
   public static void main(String args []) throws ParseException
   {
-    // test strings for running with debugging    // String str = "1 02:00; 2014 Mar Th[1] ; 2014 Jan 25 03:00;";
+    // test strings for running with debugging
+    // String str = "1 02:00; 2014 Mar Th[1] ; 2014 Jan 25 03:00;";
     // String str = "12:01-13:02, 14:00 , 10:00-sunset , 11:01-45:00/45 ; 12-16 closed  ; Mo, We 12:01-13:02 ; Apr-Sep Tu-Th,Fr 10:01-13:03, Dec 13:03-21:01 ; week 01-22 10:11-14:14 ; 2014 Jan 2 03:00;";
     String str = "12:01-13:02, 14:00 , 10:00-sunset , 11:01-45:00/46 ; 12-16 closed \u005c"ein test\u005c" ; Mo, We 12:01-13:02 ; Apr-Sep 10:01-13:03, Dec 13:03-21:01";
     // String str = "closed \"ein test\" ;";
     // String str = "12:01-13:02, 14:00 , 10:00-sunset , 11:01-45:00/46 ; closed \"ein test\"";
     // String str = "Mo[1-4,5] 4:01-13:02";
     // String str = "PH +1 day 00:00-04:00 off";
-    // String str = "Nov 16 12:00-17:00";    // String str = "May 1: off";
+    // String str = "Nov 16 12:00-17:00";
+    // String str = "May 1: off";
     // String str = "Mo, We 12:01-13:02";
-    // String str = "We-Mo 18:00+; Tu off || \"Ende offen (Küche bis 22 Uhr)\"";
+    // String str = "We-Mo 18:00+; Tu off || \"Ende offen (KÃ¼che bis 22 Uhr)\"";
     // String str = "We-Sa 20:00-06:00; Jun 8:00-14:00;";
     // String str = "We 16:00-20:00; Mar-Oct We 15:00-21:00, Th 18:00-21:00";
     // String str = "Mar-Oct We 15:00-21:00, Th 18:00-21:00";
